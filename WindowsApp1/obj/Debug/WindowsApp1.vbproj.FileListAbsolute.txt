@@ -1,0 +1,15 @@
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Login.resources
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Product.resources
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Splash.resources
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.cache
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.CoreCompileInputs.cache
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe.config
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.pdb
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.xml
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.CopyComplete
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.exe
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.xml
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.pdb
+D:\ArjayProgramPractice\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbprojAssemblyReference.cache
