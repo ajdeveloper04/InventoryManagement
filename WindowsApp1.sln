@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.2017
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WindowsApp1", "WindowsApp1\WindowsApp1.vbproj", "{D1901E0B-5CEE-42C3-BC7F-453F5030E8C6}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InventoryManagement", "WindowsApp1\InventoryManagement.vbproj", "{D1901E0B-5CEE-42C3-BC7F-453F5030E8C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
