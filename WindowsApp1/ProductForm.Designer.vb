@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Product
+Partial Class ProductForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -35,8 +35,6 @@ Partial Class Product
         Me.GunaLabel1 = New Guna.UI.WinForms.GunaLabel()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GunaDragControl1 = New Guna.UI.WinForms.GunaDragControl(Me.components)
-        Me.lb_ProdID = New System.Windows.Forms.Label()
-        Me.tb_ProdID = New Guna.UI2.WinForms.Guna2TextBox()
         Me.tb_ProdName = New Guna.UI2.WinForms.Guna2TextBox()
         Me.lb_ProdName = New System.Windows.Forms.Label()
         Me.tb_Quantity = New Guna.UI2.WinForms.Guna2TextBox()
@@ -59,6 +57,8 @@ Partial Class Product
         Me.bt_Find = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.lb_ProdID = New System.Windows.Forms.Label()
+        Me.tb_ProdID = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.db_Datagrid, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -159,42 +159,6 @@ Partial Class Product
         '
         Me.GunaDragControl1.TargetControl = Me
         '
-        'lb_ProdID
-        '
-        Me.lb_ProdID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_ProdID.ForeColor = System.Drawing.Color.White
-        Me.lb_ProdID.Location = New System.Drawing.Point(17, 84)
-        Me.lb_ProdID.Name = "lb_ProdID"
-        Me.lb_ProdID.Size = New System.Drawing.Size(125, 36)
-        Me.lb_ProdID.TabIndex = 2
-        Me.lb_ProdID.Text = "Product ID:"
-        Me.lb_ProdID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'tb_ProdID
-        '
-        Me.tb_ProdID.BorderRadius = 15
-        Me.tb_ProdID.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.tb_ProdID.DefaultText = ""
-        Me.tb_ProdID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.tb_ProdID.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.tb_ProdID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.tb_ProdID.DisabledState.Parent = Me.tb_ProdID
-        Me.tb_ProdID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.tb_ProdID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.tb_ProdID.FocusedState.Parent = Me.tb_ProdID
-        Me.tb_ProdID.ForeColor = System.Drawing.Color.Black
-        Me.tb_ProdID.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.tb_ProdID.HoverState.Parent = Me.tb_ProdID
-        Me.tb_ProdID.Location = New System.Drawing.Point(148, 87)
-        Me.tb_ProdID.Name = "tb_ProdID"
-        Me.tb_ProdID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.tb_ProdID.PlaceholderText = ""
-        Me.tb_ProdID.SelectedText = ""
-        Me.tb_ProdID.ShadowDecoration.Parent = Me.tb_ProdID
-        Me.tb_ProdID.Size = New System.Drawing.Size(97, 36)
-        Me.tb_ProdID.TabIndex = 1
-        Me.tb_ProdID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'tb_ProdName
         '
         Me.tb_ProdName.BorderRadius = 15
@@ -289,7 +253,7 @@ Partial Class Product
         Me.tb_Price.SelectedText = ""
         Me.tb_Price.ShadowDecoration.Parent = Me.tb_Price
         Me.tb_Price.Size = New System.Drawing.Size(97, 36)
-        Me.tb_Price.TabIndex = 5
+        Me.tb_Price.TabIndex = 6
         Me.tb_Price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'lb_Price
@@ -618,7 +582,43 @@ Partial Class Product
         Me.Panel3.Size = New System.Drawing.Size(927, 44)
         Me.Panel3.TabIndex = 24
         '
-        'Product
+        'lb_ProdID
+        '
+        Me.lb_ProdID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_ProdID.ForeColor = System.Drawing.Color.White
+        Me.lb_ProdID.Location = New System.Drawing.Point(17, 84)
+        Me.lb_ProdID.Name = "lb_ProdID"
+        Me.lb_ProdID.Size = New System.Drawing.Size(125, 36)
+        Me.lb_ProdID.TabIndex = 2
+        Me.lb_ProdID.Text = "Product ID:"
+        Me.lb_ProdID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'tb_ProdID
+        '
+        Me.tb_ProdID.BorderRadius = 15
+        Me.tb_ProdID.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.tb_ProdID.DefaultText = ""
+        Me.tb_ProdID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.tb_ProdID.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.tb_ProdID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tb_ProdID.DisabledState.Parent = Me.tb_ProdID
+        Me.tb_ProdID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tb_ProdID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tb_ProdID.FocusedState.Parent = Me.tb_ProdID
+        Me.tb_ProdID.ForeColor = System.Drawing.Color.Black
+        Me.tb_ProdID.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tb_ProdID.HoverState.Parent = Me.tb_ProdID
+        Me.tb_ProdID.Location = New System.Drawing.Point(148, 87)
+        Me.tb_ProdID.Name = "tb_ProdID"
+        Me.tb_ProdID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.tb_ProdID.PlaceholderText = ""
+        Me.tb_ProdID.SelectedText = ""
+        Me.tb_ProdID.ShadowDecoration.Parent = Me.tb_ProdID
+        Me.tb_ProdID.Size = New System.Drawing.Size(97, 36)
+        Me.tb_ProdID.TabIndex = 1
+        Me.tb_ProdID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'ProductForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -645,7 +645,7 @@ Partial Class Product
         Me.Controls.Add(Me.FlowLayoutPanel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Product"
+        Me.Name = "ProductForm"
         Me.Padding = New System.Windows.Forms.Padding(2)
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main"
@@ -666,8 +666,6 @@ Partial Class Product
     Friend WithEvents GunaLabel2 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
     Friend WithEvents GunaDragControl1 As Guna.UI.WinForms.GunaDragControl
-    Friend WithEvents tb_ProdID As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents lb_ProdID As Label
     Friend WithEvents tb_Price As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents lb_Price As Label
     Friend WithEvents tb_Quantity As Guna.UI2.WinForms.Guna2TextBox
@@ -690,4 +688,6 @@ Partial Class Product
     Friend WithEvents tb_SearchBar As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
+    Friend WithEvents tb_ProdID As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents lb_ProdID As Label
 End Class

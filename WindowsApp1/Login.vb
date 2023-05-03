@@ -37,7 +37,7 @@ Public Class Login
                         conn.Open()
                         Using dr As OleDbDataReader = cmd.ExecuteReader()
                             If dr.Read() Then
-                                Product.Show()
+                                ProductForm.Show()
                                 Me.Hide()
                             Else
                                 MessageBox.Show("Username and Password did not match!", "Authentication Failure", MessageBoxButtons.OK, MessageBoxIcon.Error)

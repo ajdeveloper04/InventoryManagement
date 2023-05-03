@@ -1,0 +1,15 @@
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\bin\Debug\InventoryManagement.exe.config
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\bin\Debug\InventoryManagement.exe
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\bin\Debug\InventoryManagement.pdb
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\bin\Debug\InventoryManagement.xml
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.EditForm.resources
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.Login.resources
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.ProductForm.resources
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.Splash.resources
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.Resources.resources
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.vbproj.GenerateResource.cache
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.vbproj.CoreCompileInputs.cache
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.vbproj.CopyComplete
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.exe
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.xml
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.pdb
