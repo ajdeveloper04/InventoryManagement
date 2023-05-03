@@ -11,7 +11,7 @@ Public Class Product
     Private sql As String
 
     Public Function GetAll() As DataTable
-        'Get All Data From Database
+        'Get All Data From Databases
         Dim dt As New DataTable()
         Try
             Using conn As New OleDbConnection(constring)
