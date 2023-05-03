@@ -57,11 +57,11 @@ Partial Class EditForm
         Me.GunaLabel1.BackColor = System.Drawing.Color.Transparent
         Me.GunaLabel1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel1.ForeColor = System.Drawing.Color.White
-        Me.GunaLabel1.Location = New System.Drawing.Point(143, 22)
+        Me.GunaLabel1.Location = New System.Drawing.Point(206, 22)
         Me.GunaLabel1.Name = "GunaLabel1"
-        Me.GunaLabel1.Size = New System.Drawing.Size(271, 25)
+        Me.GunaLabel1.Size = New System.Drawing.Size(115, 25)
         Me.GunaLabel1.TabIndex = 1
-        Me.GunaLabel1.Text = "Inventory Management System"
+        Me.GunaLabel1.Text = "Edit Product"
         '
         'FlowLayoutPanel2
         '

@@ -13,3 +13,6 @@ D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\Invento
 D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.exe
 D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.xml
 D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.pdb
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.vbprojAssemblyReference.cache
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.Home.resources
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.CustomerForm.resources

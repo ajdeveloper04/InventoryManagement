@@ -37,11 +37,11 @@ Public Class Product
             conn.ConnectionString = constring
             conn.Open()
 
-            sql = "INSERT INTO ProdList (ProdID, ProdName, ProdDecription, ProdCategory, ProdQuantity, ProdPrice) " &
+            sql = "INSERT INTO ProdList (ID, ProdName, ProdDecription, ProdCategory, ProdQuantity, ProdPrice) " &
                 "VALUES (@ProdID, @ProdName, @ProdDescription, @ProdCategory, @ProdQuantity, @ProdPrice)"
 
             cmd = New OleDbCommand(sql, conn)
-            cmd.Parameters.AddWithValue("@ProdID", id)
+            cmd.Parameters.AddWithValue("@ID", id)
             cmd.Parameters.AddWithValue("@ProdName", prodName)
             cmd.Parameters.AddWithValue("@ProdDecription", prodDescription)
             cmd.Parameters.AddWithValue("@ProdCategory", prodCategory)
@@ -62,14 +62,14 @@ Public Class Product
             conn.ConnectionString = constring
             conn.Open()
 
-            sql = "UPDATE ProdList SET ProdName = @ProdName, ProdDecription = @ProdDescription , ProdCategory = @ProdCategory, ProdQuantity = @ProdQuantity, ProdPrice =  @ProdPrice WHERE ProdID = @ProdID"
+            sql = "UPDATE ProdList SET ProdName = @ProdName, ProdDecription = @ProdDescription , ProdCategory = @ProdCategory, ProdQuantity = @ProdQuantity, ProdPrice =  @ProdPrice WHERE ID = @ID"
             cmd = New OleDbCommand(sql, conn)
             cmd.Parameters.AddWithValue("@ProdName", prodName)
             cmd.Parameters.AddWithValue("@ProdDescription", prodDescription)
             cmd.Parameters.AddWithValue("@ProdCategory", prodCategory)
             cmd.Parameters.AddWithValue("@ProdQuantity", prodQuantity)
             cmd.Parameters.AddWithValue("@ProdPrice", prodPrice)
-            cmd.Parameters.AddWithValue("@ProdID", id)
+            cmd.Parameters.AddWithValue("@ID", id)
             cmd.ExecuteNonQuery()
             Return True
         Catch ex As Exception
@@ -86,7 +86,7 @@ Public Class Product
             conn.Open()
             cmd.Connection = conn
             cmd.CommandType = CommandType.Text
-            cmd.CommandText = "DELETE FROM ProdList WHERE ProdID = @Id"
+            cmd.CommandText = "DELETE FROM ProdList WHERE ID = @Id"
             cmd.Parameters.AddWithValue("@Id", id)
             cmd.ExecuteNonQuery()
             Return True
