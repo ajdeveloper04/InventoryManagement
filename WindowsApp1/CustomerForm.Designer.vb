@@ -49,8 +49,6 @@ Partial Class CustomerForm
         Me.tbCustAddress = New Guna.UI2.WinForms.Guna2TextBox()
         Me.lb_Description = New System.Windows.Forms.Label()
         Me.tbCustContact = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.tbOrderQuantity = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.lbOrderQuantity = New System.Windows.Forms.Label()
         Me.tbCustName = New Guna.UI2.WinForms.Guna2TextBox()
         Me.lb_ProdName = New System.Windows.Forms.Label()
         Me.tbCustID = New Guna.UI2.WinForms.Guna2TextBox()
@@ -467,42 +465,6 @@ Partial Class CustomerForm
         Me.tbCustContact.TabIndex = 32
         Me.tbCustContact.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'tbOrderQuantity
-        '
-        Me.tbOrderQuantity.BorderRadius = 15
-        Me.tbOrderQuantity.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.tbOrderQuantity.DefaultText = ""
-        Me.tbOrderQuantity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.tbOrderQuantity.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.tbOrderQuantity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.tbOrderQuantity.DisabledState.Parent = Me.tbOrderQuantity
-        Me.tbOrderQuantity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.tbOrderQuantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.tbOrderQuantity.FocusedState.Parent = Me.tbOrderQuantity
-        Me.tbOrderQuantity.ForeColor = System.Drawing.Color.Black
-        Me.tbOrderQuantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.tbOrderQuantity.HoverState.Parent = Me.tbOrderQuantity
-        Me.tbOrderQuantity.Location = New System.Drawing.Point(669, 86)
-        Me.tbOrderQuantity.Name = "tbOrderQuantity"
-        Me.tbOrderQuantity.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.tbOrderQuantity.PlaceholderText = ""
-        Me.tbOrderQuantity.SelectedText = ""
-        Me.tbOrderQuantity.ShadowDecoration.Parent = Me.tbOrderQuantity
-        Me.tbOrderQuantity.Size = New System.Drawing.Size(97, 36)
-        Me.tbOrderQuantity.TabIndex = 31
-        Me.tbOrderQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'lbOrderQuantity
-        '
-        Me.lbOrderQuantity.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbOrderQuantity.ForeColor = System.Drawing.Color.White
-        Me.lbOrderQuantity.Location = New System.Drawing.Point(539, 86)
-        Me.lbOrderQuantity.Name = "lbOrderQuantity"
-        Me.lbOrderQuantity.Size = New System.Drawing.Size(125, 36)
-        Me.lbOrderQuantity.TabIndex = 33
-        Me.lbOrderQuantity.Text = "Order Quantity:"
-        Me.lbOrderQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'tbCustName
         '
         Me.tbCustName.BorderRadius = 15
@@ -614,8 +576,6 @@ Partial Class CustomerForm
         Me.Controls.Add(Me.tbCustAddress)
         Me.Controls.Add(Me.lb_Description)
         Me.Controls.Add(Me.tbCustContact)
-        Me.Controls.Add(Me.tbOrderQuantity)
-        Me.Controls.Add(Me.lbOrderQuantity)
         Me.Controls.Add(Me.tbCustName)
         Me.Controls.Add(Me.lb_ProdName)
         Me.Controls.Add(Me.tbCustID)
@@ -656,8 +616,6 @@ Partial Class CustomerForm
     Friend WithEvents tbCustAddress As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents lb_Description As Label
     Friend WithEvents tbCustContact As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents tbOrderQuantity As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents lbOrderQuantity As Label
     Friend WithEvents tbCustName As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents lb_ProdName As Label
     Friend WithEvents tbCustID As Guna.UI2.WinForms.Guna2TextBox

@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 
-Public Class Product
+Public Class CategoryMain
 
     Private conn As New OleDbConnection()
     Private dr As OleDbDataReader
@@ -16,7 +16,7 @@ Public Class Product
         Try
             Using conn As New OleDbConnection(constring)
                 conn.Open()
-                Using cmd As New OleDbCommand("SELECT * FROM ProdList", conn)
+                Using cmd As New OleDbCommand("SELECT * FROM CategoryList", conn)
                     Using da As New OleDbDataAdapter(cmd)
                         da.Fill(dt)
                     End Using
@@ -31,23 +31,20 @@ Public Class Product
 
     End Function
 
-    Public Function Add(id As Integer, prodName As String, prodDescription As String,
-                        prodCategory As String, prodQuantity As Integer, prodPrice As Decimal) As Boolean
+    Public Function Add(id As Integer, prodCategory As String) As Boolean
         Try
             conn.ConnectionString = constring
             conn.Open()
 
-            sql = "INSERT INTO ProdList (ID, ProdName, ProdDecription, ProdCategory, ProdQuantity, ProdPrice) " &
-                "VALUES (@ProdID, @ProdName, @ProdDescription, @ProdCategory, @ProdQuantity, @ProdPrice)"
+            sql = "INSERT INTO CategoryList (ID, ProdCategory) VALUES (@ID, @ProdCategory)"
 
             cmd = New OleDbCommand(sql, conn)
             cmd.Parameters.AddWithValue("@ID", id)
-            cmd.Parameters.AddWithValue("@ProdName", prodName)
-            cmd.Parameters.AddWithValue("@ProdDecription", prodDescription)
             cmd.Parameters.AddWithValue("@ProdCategory", prodCategory)
-            cmd.Parameters.AddWithValue("@ProdQuantity", prodQuantity)
-            cmd.Parameters.AddWithValue("@ProdPrice", prodPrice)
+
+            'Execute the command to insert the data into the database
             cmd.ExecuteNonQuery()
+
             Return True
         Catch ex As Exception
             Return False
@@ -56,19 +53,14 @@ Public Class Product
         End Try
     End Function
 
-    Public Function Update(id As Integer, prodName As String, prodDescription As String,
-                           prodCategory As String, prodQuantity As Integer, prodPrice As Decimal) As Boolean
+    Public Function Update(id As Integer, prodCategory As String) As Boolean
         Try
             conn.ConnectionString = constring
             conn.Open()
 
-            sql = "UPDATE ProdList SET ProdName = @ProdName, ProdDecription = @ProdDescription , ProdCategory = @ProdCategory, ProdQuantity = @ProdQuantity, ProdPrice =  @ProdPrice WHERE ID = @ID"
+            sql = "UPDATE CategoryList SET ProdCategory = @ProdCategory WHERE ID = @ID"
             cmd = New OleDbCommand(sql, conn)
-            cmd.Parameters.AddWithValue("@ProdName", prodName)
-            cmd.Parameters.AddWithValue("@ProdDescription", prodDescription)
             cmd.Parameters.AddWithValue("@ProdCategory", prodCategory)
-            cmd.Parameters.AddWithValue("@ProdQuantity", prodQuantity)
-            cmd.Parameters.AddWithValue("@ProdPrice", prodPrice)
             cmd.Parameters.AddWithValue("@ID", id)
             cmd.ExecuteNonQuery()
             Return True
@@ -86,7 +78,7 @@ Public Class Product
             conn.Open()
             cmd.Connection = conn
             cmd.CommandType = CommandType.Text
-            cmd.CommandText = "DELETE FROM ProdList WHERE ID = @Id"
+            cmd.CommandText = "DELETE FROM CategoryList WHERE ID = @Id"
             cmd.Parameters.AddWithValue("@Id", id)
             cmd.ExecuteNonQuery()
             Return True

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class EditForm
+Partial Class ProdEditForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -304,7 +304,7 @@ Partial Class EditForm
         Me.btClear.TabIndex = 25
         Me.btClear.Text = "Clear"
         '
-        'EditForm
+        'ProdEditForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -326,7 +326,7 @@ Partial Class EditForm
         Me.Controls.Add(Me.FlowLayoutPanel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "EditForm"
+        Me.Name = "ProdEditForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "EditForm"
         Me.Panel1.ResumeLayout(False)

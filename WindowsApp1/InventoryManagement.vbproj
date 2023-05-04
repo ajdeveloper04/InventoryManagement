@@ -79,20 +79,40 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Product.vb" />
+    <Compile Include="CatEditForm.Designer.vb">
+      <DependentUpon>CatEditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CatEditForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryForm.Designer.vb">
+      <DependentUpon>CategoryForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\CategoryMain.vb" />
+    <Compile Include="Classes\ProductMain.vb" />
+    <Compile Include="CustEditForm.Designer.vb">
+      <DependentUpon>CustEditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustEditForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CustomerForm.Designer.vb">
       <DependentUpon>CustomerForm.vb</DependentUpon>
     </Compile>
     <Compile Include="CustomerForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditForm.Designer.vb">
-      <DependentUpon>EditForm.vb</DependentUpon>
+    <Compile Include="Classes\CustomerMain.vb" />
+    <Compile Include="ProdEditForm.Designer.vb">
+      <DependentUpon>ProdEditForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="EditForm.vb">
+    <Compile Include="ProdEditForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GlobalVariables.vb" />
+    <Compile Include="GlobalVariable\GlobalVariables.vb" />
     <Compile Include="Home.Designer.vb">
       <DependentUpon>Home.vb</DependentUpon>
     </Compile>
@@ -133,13 +153,34 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="TransactionForm.Designer.vb">
+      <DependentUpon>TransactionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransEditForm.Designer.vb">
+      <DependentUpon>TransEditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransEditForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CatEditForm.resx">
+      <DependentUpon>CatEditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryForm.resx">
+      <DependentUpon>CategoryForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustEditForm.resx">
+      <DependentUpon>CustEditForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerForm.resx">
       <DependentUpon>CustomerForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditForm.resx">
-      <DependentUpon>EditForm.vb</DependentUpon>
+    <EmbeddedResource Include="ProdEditForm.resx">
+      <DependentUpon>ProdEditForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
@@ -158,6 +199,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionForm.resx">
+      <DependentUpon>TransactionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransEditForm.resx">
+      <DependentUpon>TransEditForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

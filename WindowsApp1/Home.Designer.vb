@@ -24,22 +24,21 @@ Partial Class Home
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
-        Me.Guna2DragControl2 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GunaLabel1 = New Guna.UI.WinForms.GunaLabel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btCustomers = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.btProducts = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.btCategories = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btTransactions = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.btCategories = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.btProducts = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.btCustomers = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.btHome = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        Me.btLogout = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -52,10 +51,6 @@ Partial Class Home
         'Guna2DragControl1
         '
         Me.Guna2DragControl1.TargetControl = Me
-        '
-        'Guna2DragControl2
-        '
-        Me.Guna2DragControl2.TargetControl = Nothing
         '
         'Panel1
         '
@@ -99,6 +94,28 @@ Partial Class Home
         Me.Label1.Text = "Customers"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btCustomers
+        '
+        Me.btCustomers.BackgroundImage = Global.InventoryManagement.My.Resources.Resources.icons8_crowd_96
+        Me.btCustomers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btCustomers.BorderRadius = 15
+        Me.btCustomers.CheckedState.Parent = Me.btCustomers
+        Me.btCustomers.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btCustomers.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.btCustomers.CustomImages.Parent = Me.btCustomers
+        Me.btCustomers.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btCustomers.FillColor = System.Drawing.Color.Transparent
+        Me.btCustomers.FillColor2 = System.Drawing.Color.Transparent
+        Me.btCustomers.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btCustomers.ForeColor = System.Drawing.Color.White
+        Me.btCustomers.HoverState.Parent = Me.btCustomers
+        Me.btCustomers.Location = New System.Drawing.Point(0, 0)
+        Me.btCustomers.Name = "btCustomers"
+        Me.btCustomers.ShadowDecoration.Parent = Me.btCustomers
+        Me.btCustomers.Size = New System.Drawing.Size(127, 86)
+        Me.btCustomers.TabIndex = 26
+        Me.btCustomers.TextOffset = New System.Drawing.Point(0, 45)
+        '
         'Panel3
         '
         Me.Panel3.Controls.Add(Me.Label2)
@@ -119,6 +136,26 @@ Partial Class Home
         Me.Label2.Text = "Products"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btProducts
+        '
+        Me.btProducts.BackgroundImage = Global.InventoryManagement.My.Resources.Resources.icons8_add_shopping_cart_48
+        Me.btProducts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btProducts.BorderRadius = 15
+        Me.btProducts.CheckedState.Parent = Me.btProducts
+        Me.btProducts.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btProducts.CustomImages.Parent = Me.btProducts
+        Me.btProducts.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btProducts.FillColor = System.Drawing.Color.Transparent
+        Me.btProducts.FillColor2 = System.Drawing.Color.Transparent
+        Me.btProducts.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btProducts.ForeColor = System.Drawing.Color.White
+        Me.btProducts.HoverState.Parent = Me.btProducts
+        Me.btProducts.Location = New System.Drawing.Point(0, 0)
+        Me.btProducts.Name = "btProducts"
+        Me.btProducts.ShadowDecoration.Parent = Me.btProducts
+        Me.btProducts.Size = New System.Drawing.Size(97, 86)
+        Me.btProducts.TabIndex = 25
+        '
         'Panel4
         '
         Me.Panel4.Controls.Add(Me.Label3)
@@ -138,6 +175,26 @@ Partial Class Home
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Categories"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btCategories
+        '
+        Me.btCategories.BackgroundImage = Global.InventoryManagement.My.Resources.Resources.icons8_categorize_96
+        Me.btCategories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btCategories.BorderRadius = 15
+        Me.btCategories.CheckedState.Parent = Me.btCategories
+        Me.btCategories.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btCategories.CustomImages.Parent = Me.btCategories
+        Me.btCategories.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btCategories.FillColor = System.Drawing.Color.Transparent
+        Me.btCategories.FillColor2 = System.Drawing.Color.Transparent
+        Me.btCategories.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btCategories.ForeColor = System.Drawing.Color.White
+        Me.btCategories.HoverState.Parent = Me.btCategories
+        Me.btCategories.Location = New System.Drawing.Point(0, 0)
+        Me.btCategories.Name = "btCategories"
+        Me.btCategories.ShadowDecoration.Parent = Me.btCategories
+        Me.btCategories.Size = New System.Drawing.Size(127, 86)
+        Me.btCategories.TabIndex = 30
         '
         'Panel5
         '
@@ -179,90 +236,28 @@ Partial Class Home
         Me.btTransactions.Size = New System.Drawing.Size(127, 86)
         Me.btTransactions.TabIndex = 31
         '
-        'btCategories
+        'btLogout
         '
-        Me.btCategories.BackgroundImage = Global.InventoryManagement.My.Resources.Resources.icons8_categorize_96
-        Me.btCategories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btCategories.BorderRadius = 15
-        Me.btCategories.CheckedState.Parent = Me.btCategories
-        Me.btCategories.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btCategories.CustomImages.Parent = Me.btCategories
-        Me.btCategories.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btCategories.FillColor = System.Drawing.Color.Transparent
-        Me.btCategories.FillColor2 = System.Drawing.Color.Transparent
-        Me.btCategories.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btCategories.ForeColor = System.Drawing.Color.White
-        Me.btCategories.HoverState.Parent = Me.btCategories
-        Me.btCategories.Location = New System.Drawing.Point(0, 0)
-        Me.btCategories.Name = "btCategories"
-        Me.btCategories.ShadowDecoration.Parent = Me.btCategories
-        Me.btCategories.Size = New System.Drawing.Size(127, 86)
-        Me.btCategories.TabIndex = 30
-        '
-        'btProducts
-        '
-        Me.btProducts.BackgroundImage = Global.InventoryManagement.My.Resources.Resources.icons8_add_shopping_cart_48
-        Me.btProducts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btProducts.BorderRadius = 15
-        Me.btProducts.CheckedState.Parent = Me.btProducts
-        Me.btProducts.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btProducts.CustomImages.Parent = Me.btProducts
-        Me.btProducts.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btProducts.FillColor = System.Drawing.Color.Transparent
-        Me.btProducts.FillColor2 = System.Drawing.Color.Transparent
-        Me.btProducts.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btProducts.ForeColor = System.Drawing.Color.White
-        Me.btProducts.HoverState.Parent = Me.btProducts
-        Me.btProducts.Location = New System.Drawing.Point(0, 0)
-        Me.btProducts.Name = "btProducts"
-        Me.btProducts.ShadowDecoration.Parent = Me.btProducts
-        Me.btProducts.Size = New System.Drawing.Size(97, 86)
-        Me.btProducts.TabIndex = 25
-        '
-        'btCustomers
-        '
-        Me.btCustomers.BackgroundImage = Global.InventoryManagement.My.Resources.Resources.icons8_crowd_96
-        Me.btCustomers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btCustomers.BorderRadius = 15
-        Me.btCustomers.CheckedState.Parent = Me.btCustomers
-        Me.btCustomers.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btCustomers.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.btCustomers.CustomImages.Parent = Me.btCustomers
-        Me.btCustomers.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btCustomers.FillColor = System.Drawing.Color.Transparent
-        Me.btCustomers.FillColor2 = System.Drawing.Color.Transparent
-        Me.btCustomers.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btCustomers.ForeColor = System.Drawing.Color.White
-        Me.btCustomers.HoverState.Parent = Me.btCustomers
-        Me.btCustomers.Location = New System.Drawing.Point(0, 0)
-        Me.btCustomers.Name = "btCustomers"
-        Me.btCustomers.ShadowDecoration.Parent = Me.btCustomers
-        Me.btCustomers.Size = New System.Drawing.Size(127, 86)
-        Me.btCustomers.TabIndex = 26
-        Me.btCustomers.TextOffset = New System.Drawing.Point(0, 45)
-        '
-        'btHome
-        '
-        Me.btHome.BorderRadius = 15
-        Me.btHome.CheckedState.Parent = Me.btHome
-        Me.btHome.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btHome.CustomImages.Parent = Me.btHome
-        Me.btHome.FillColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.btHome.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.btHome.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btHome.ForeColor = System.Drawing.Color.White
-        Me.btHome.HoverState.Parent = Me.btHome
-        Me.btHome.Location = New System.Drawing.Point(203, 7)
-        Me.btHome.Name = "btHome"
-        Me.btHome.ShadowDecoration.Parent = Me.btHome
-        Me.btHome.Size = New System.Drawing.Size(122, 26)
-        Me.btHome.TabIndex = 45
-        Me.btHome.Text = "Logout"
+        Me.btLogout.BorderRadius = 15
+        Me.btLogout.CheckedState.Parent = Me.btLogout
+        Me.btLogout.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btLogout.CustomImages.Parent = Me.btLogout
+        Me.btLogout.FillColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btLogout.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btLogout.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btLogout.ForeColor = System.Drawing.Color.White
+        Me.btLogout.HoverState.Parent = Me.btLogout
+        Me.btLogout.Location = New System.Drawing.Point(203, 7)
+        Me.btLogout.Name = "btLogout"
+        Me.btLogout.ShadowDecoration.Parent = Me.btLogout
+        Me.btLogout.Size = New System.Drawing.Size(122, 26)
+        Me.btLogout.TabIndex = 45
+        Me.btLogout.Text = "Logout"
         '
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.Panel6.Controls.Add(Me.btHome)
+        Me.Panel6.Controls.Add(Me.btLogout)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel6.Location = New System.Drawing.Point(0, 315)
         Me.Panel6.Name = "Panel6"
@@ -298,7 +293,6 @@ Partial Class Home
     End Sub
 
     Friend WithEvents Guna2DragControl1 As Guna.UI2.WinForms.Guna2DragControl
-    Friend WithEvents Guna2DragControl2 As Guna.UI2.WinForms.Guna2DragControl
     Friend WithEvents Panel1 As Panel
     Friend WithEvents GunaLabel1 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents btCustomers As Guna.UI2.WinForms.Guna2GradientTileButton
@@ -314,5 +308,5 @@ Partial Class Home
     Friend WithEvents btTransactions As Guna.UI2.WinForms.Guna2GradientTileButton
     Friend WithEvents btCategories As Guna.UI2.WinForms.Guna2GradientTileButton
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents btHome As Guna.UI2.WinForms.Guna2GradientTileButton
+    Friend WithEvents btLogout As Guna.UI2.WinForms.Guna2GradientTileButton
 End Class

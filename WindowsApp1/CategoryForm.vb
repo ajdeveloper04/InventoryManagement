@@ -1,58 +1,47 @@
-﻿
-Public Class ProductForm
-    Private product As New ProductMain()
+﻿Public Class CategoryForm
 
-    Private Sub Product_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private category As New CategoryMain()
+
+    Private Sub CategoryForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadData()
     End Sub
 
     'Populates Datagridview from Main Class
     Public Sub LoadData()
-        db_Datagrid.DataSource = product.GetAll()
+        db_Datagrid.DataSource = category.GetAll()
     End Sub
 
     Public Sub ClearData()
         'Clears data in text boxes
-        tb_ProdID.Clear()
-        tb_ProdName.Clear()
-        tb_Description.Clear()
-        tb_Quantity.Clear()
-        tb_Price.Clear()
-        cb_Category.SelectedIndex = -1
+        tbCategoryID.Clear()
+        tbCatName.Clear()
         tb_SearchBar.Clear()
     End Sub
 
     Private Sub bt_Add_Click(sender As Object, e As EventArgs) Handles bt_Add.Click
-        Dim product As New ProductMain
-        Dim prodName = tb_ProdName.Text.Trim()
-        Dim description = tb_Description.Text.Trim()
-        Dim category = cb_Category.SelectedItem?.ToString()
-        Dim quantity As Integer
-        Dim price As Decimal
-        If Integer.TryParse(tb_Quantity.Text.Trim(), quantity) AndAlso Decimal.TryParse(tb_Price.Text.Trim(), price) Then
-            Dim result = product.Add(CInt(tb_ProdID.Text), prodName, description, category, quantity, price)
+        Dim category As New CategoryMain
+        Dim categoryName = tbCatName.Text.Trim()
+        If Not tbCatName.Text = "" Then
+            Dim result = category.Add(CInt(tbCategoryID.Text), categoryName)
             If result Then
-                MessageBox.Show("Product Successfully Added", "Add Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Category Successfully Added", "Add Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 LoadData()
                 ClearData()
             Else
-                MessageBox.Show("Failed to add product. Please try again.", "Add Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                MessageBox.Show("Failed to add Category. Please try again.", "Add Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             End If
         Else
-            MessageBox.Show("Invalid input. Please enter a product.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            MessageBox.Show("Invalid input. Please enter a category.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End If
     End Sub
 
     Private Sub bt_Edit_Click(sender As Object, e As EventArgs) Handles bt_Edit.Click
         'Add the values selected from datagridview to the following variables
         Dim id = db_Datagrid.CurrentRow.Cells(0).Value
-        Dim prodName = db_Datagrid.CurrentRow.Cells(1).Value
-        Dim prodDescription = db_Datagrid.CurrentRow.Cells(2).Value
-        Dim prodCategory = db_Datagrid.CurrentRow.Cells(3).Value
-        Dim prodQuantity = db_Datagrid.CurrentRow.Cells(4).Value
-        Dim prodPrice = db_Datagrid.CurrentRow.Cells(5).Value
+        Dim prodCategory = db_Datagrid.CurrentRow.Cells(1).Value
+
         'Transfer variable values for EditForm
-        Dim edit As New ProdEditForm(id, prodName, prodDescription, prodCategory, prodQuantity, CDbl(prodPrice))
+        Dim edit As New CatEditForm(id, prodCategory)
         edit.Show()
     End Sub
 
@@ -60,12 +49,12 @@ Public Class ProductForm
         'Executes deleting the data selected from rows
         Dim confMsg = MessageBox.Show("Are you sure you want to delete this item?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
         If confMsg = DialogResult.Yes Then
-            Dim result = product.Delete(db_Datagrid.CurrentRow.Cells(0).Value)
+            Dim result = category.Delete(db_Datagrid.CurrentRow.Cells(0).Value)
             If result Then
-                MessageBox.Show("Product Succesfully Deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Category Succesfully Deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 LoadData()
             Else
-                MessageBox.Show("Failed to delete product. Please try again", "Delete Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                MessageBox.Show("Failed to delete category. Please try again", "Delete Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             End If
         End If
     End Sub
@@ -83,7 +72,7 @@ Public Class ProductForm
             dt = db_Datagrid.DataSource
             Dim searchText As String = tb_SearchBar.Text.Trim()
             'filter datatable dt using LINQ
-            Dim filteredRows = dt.AsEnumerable().Where(Function(row) row.Field(Of String)("ProdName").IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0)
+            Dim filteredRows = dt.AsEnumerable().Where(Function(row) row.Field(Of String)("ProdCategory").IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0)
             If filteredRows.Any() Then
                 Dim dtFiltered As DataTable = filteredRows.CopyToDataTable()
                 'set datagridview data to the filtered data
@@ -116,4 +105,5 @@ Public Class ProductForm
         Me.Close()
         Home.Show()
     End Sub
+
 End Class

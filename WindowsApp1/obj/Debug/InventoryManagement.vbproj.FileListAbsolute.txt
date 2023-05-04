@@ -2,7 +2,6 @@ D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\bin\Debug\Invento
 D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\bin\Debug\InventoryManagement.exe
 D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\bin\Debug\InventoryManagement.pdb
 D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\bin\Debug\InventoryManagement.xml
-D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.EditForm.resources
 D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.Login.resources
 D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.ProductForm.resources
 D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.Splash.resources
@@ -13,6 +12,12 @@ D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\Invento
 D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.exe
 D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.xml
 D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.pdb
-D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.vbprojAssemblyReference.cache
 D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.Home.resources
 D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.CustomerForm.resources
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.CategoryForm.resources
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.TransactionForm.resources
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.CatEditForm.resources
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.CustEditForm.resources
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.ProdEditForm.resources
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.TransEditForm.resources
+D:\ArjayProgramPractice\Github\InventoryManagement\WindowsApp1\obj\Debug\InventoryManagement.vbprojAssemblyReference.cache

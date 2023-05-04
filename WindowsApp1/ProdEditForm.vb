@@ -1,5 +1,5 @@
 ﻿
-Public Class EditForm
+Public Class ProdEditForm
     Private id As Integer
     Private prodName As String
     Private prodDescription As String
@@ -19,7 +19,7 @@ Public Class EditForm
     End Sub
 
     Private Sub btUpdate_Click(sender As Object, e As EventArgs) Handles btUpdate.Click
-        Dim product As New Product()
+        Dim product As New ProductMain()
         Dim result = product.Update(
             id,
             tb_ProdName.Text,
